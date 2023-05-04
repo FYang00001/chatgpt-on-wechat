@@ -5,6 +5,36 @@ import logging
 import os
 import pickle
 
+  
+  
+  
+    import hashlib
+import os
+from flask import Flask, request
+
+app = Flask(__name__)
+
+@app.route('/your-url', methods=['GET'])
+def wechat_auth():
+    token = "0750"  # 填写您在公众平台上设置的Token
+    signature = request.args.get('signature', '')
+    timestamp = request.args.get('timestamp', '')
+    nonce = request.args.get('nonce', '')
+    echostr = request.args.get('echostr', '')
+    s = [timestamp, nonce, token]
+    s.sort()
+    s = ''.join(s).encode('utf-8')
+    if hashlib.sha1(s).hexdigest() == signature:
+        return echostr
+    else:
+        return ''
+
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
+    
+    
+
+
 from common.log import logger
 
 # 将所有可用的配置项写在字典里, 请使用小写字母
@@ -87,11 +117,20 @@ available_setting = {
     "single_chat_reply_prefix": "", # 推荐设置，回复不设置前缀
     "plugin_trigger_prefix": "&",  
     
+  
+    
+    
+    
+    
+    
+    
+    
+    
     
     # wechatcom的通用配置
     "wechatcom_corp_id": "",  # 企业微信公司的corpID
     # wechatcomapp的配置
-    "wechatcomapp_token": "",  # 企业微信app的token
+    "wechatcomapp_token": "0750",  # 企业微信app的token
     "wechatcomapp_port": 9898,  # 企业微信app的服务端口,不需要端口转发
     "wechatcomapp_secret": "",  # 企业微信app的secret
     "wechatcomapp_agent_id": "",  # 企业微信app的agent_id
