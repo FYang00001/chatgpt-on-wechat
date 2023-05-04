@@ -83,6 +83,11 @@ available_setting = {
     "wechatmp_app_id": "wx657d6d518f88c0b0",  # 微信公众平台的appID
     "wechatmp_app_secret": "0b6c4f9b7a27113d12b93e3f0edef0a7",  # 微信公众平台的appsecret
     "wechatmp_aes_key": "s4fGJLdjRlBAijoOSWJUnT35Wrd5sl6qV8nA0SsoIxa",  # 微信公众平台的EncodingAESKey，加密模式需要
+    "single_chat_prefix": [""],     # 推荐设置，任意对话都可以触发回复，不添加前缀
+    "single_chat_reply_prefix": "", # 推荐设置，回复不设置前缀
+    "plugin_trigger_prefix": "&",  
+    
+    
     # wechatcom的通用配置
     "wechatcom_corp_id": "",  # 企业微信公司的corpID
     # wechatcomapp的配置
