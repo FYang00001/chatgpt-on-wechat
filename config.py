@@ -77,11 +77,12 @@ available_setting = {
     # wechaty的配置
     "wechaty_puppet_service_token": "",  # wechaty的token
     # wechatmp的配置
-    "wechatmp_token": "",  # 微信公众平台的Token
+    "channel_type": "wechatmp_service", 
+    "wechatmp_token": "0750",  # 微信公众平台的Token
     "wechatmp_port": 8080,  # 微信公众平台的端口,需要端口转发到80或443
-    "wechatmp_app_id": "",  # 微信公众平台的appID
-    "wechatmp_app_secret": "",  # 微信公众平台的appsecret
-    "wechatmp_aes_key": "",  # 微信公众平台的EncodingAESKey，加密模式需要
+    "wechatmp_app_id": "wx657d6d518f88c0b0",  # 微信公众平台的appID
+    "wechatmp_app_secret": "0b6c4f9b7a27113d12b93e3f0edef0a7",  # 微信公众平台的appsecret
+    "wechatmp_aes_key": "s4fGJLdjRlBAijoOSWJUnT35Wrd5sl6qV8nA0SsoIxa",  # 微信公众平台的EncodingAESKey，加密模式需要
     # wechatcom的通用配置
     "wechatcom_corp_id": "",  # 企业微信公司的corpID
     # wechatcomapp的配置
