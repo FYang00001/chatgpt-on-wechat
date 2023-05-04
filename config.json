@@ -2,7 +2,7 @@
 {
   "open_ai_api_key": "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",     
   "model": "gpt-3.5-turbo",                                
-  "proxy": "139.59.250.117:8080",                                  # 代理客户端的ip和端口
+  "proxy": "139.59.250.117:8080",                                 
   "single_chat_prefix": ["bot", "@bot"],             
   "single_chat_reply_prefix": "[bot] ",                     
   "group_chat_prefix": ["@bot"],                              
@@ -16,7 +16,7 @@
   #wechatmp的配置
     "channel_type": "wechatmp_service", 
     "wechatmp_token": "0750",  #微信公众平台的Token
-    "wechatmp_port": 8080,  #微信公众平台的端口,需要端口转发到80或443
+    "wechatmp_port": 8080,  #微信公众平台的端口
     "wechatmp_app_id": "wx657d6d518f88c0b0",  #微信公众平台的appID
     "wechatmp_app_secret": "0b6c4f9b7a27113d12b93e3f0edef0a7",  #微信公众平台的appsecret
     "wechatmp_aes_key": "s4fGJLdjRlBAijoOSWJUnT35Wrd5sl6qV8nA0SsoIxa",  #微信公众平台的EncodingAESKey，加密模式需要
